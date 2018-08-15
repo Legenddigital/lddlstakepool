@@ -3,9 +3,68 @@
 
 [[projects]]
   branch = "master"
+  name = "github.com/Legenddigital/base58"
+  packages = ["."]
+  revision = "a4687319920bab1c541d5258adb33bae272ff2ff"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/Legenddigital/lddld"
+  packages = [
+    "blockchain",
+    "blockchain/internal/dbnamespace",
+    "blockchain/internal/progresslog",
+    "blockchain/stake",
+    "blockchain/stake/internal/dbnamespace",
+    "blockchain/stake/internal/ticketdb",
+    "blockchain/stake/internal/tickettreap",
+    "certgen",
+    "chaincfg",
+    "chaincfg/chainec",
+    "chaincfg/chainhash",
+    "database",
+    "gcs",
+    "gcs/blockcf",
+    "hdkeychain",
+    "lddlec",
+    "lddlec/edwards",
+    "lddlec/secp256k1",
+    "lddlec/secp256k1/schnorr",
+    "lddljson",
+    "lddlutil",
+    "rpcclient",
+    "txscript",
+    "wire"
+  ]
+  revision = "4d372971ed02c83c4e5b174bd18d61968dc44a9a"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/Legenddigital/lddlwallet"
+  packages = [
+    "errors",
+    "internal/helpers",
+    "internal/zero",
+    "wallet/internal/snacl",
+    "wallet/internal/txsizes",
+    "wallet/internal/walletdb",
+    "wallet/txauthor",
+    "wallet/txrules",
+    "wallet/udb"
+  ]
+  revision = "4e70c3346bb8b0976132dc2d77b5081e3cdd797b"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/Legenddigital/slog"
+  packages = ["."]
+  revision = "fc479e23ea80f48bdb5e9608fce2e7e3fb470be7"
+
+[[projects]]
   name = "github.com/aead/siphash"
   packages = ["."]
-  revision = "e404fcfc888570cadd1610538e2dbc89f66af814"
+  revision = "83563a290f60225eb120d724600b9690c3fb536f"
+  version = "v1.0.1"
 
 [[projects]]
   branch = "master"
@@ -32,65 +91,6 @@
   name = "github.com/dchest/blake256"
   packages = ["."]
   revision = "dee3fe6eb0e98dc774a94fc231f85baf7c29d360"
-  version = "v1.0.0"
-
-[[projects]]
-  name = "github.com/Legenddigital/base58"
-  packages = ["."]
-  revision = "56c501706f00d9e1cfacee19a27117e12da24734"
-  version = "v1.0.0"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/Legenddigital/lddld"
-  packages = [
-    "blockchain",
-    "blockchain/internal/dbnamespace",
-    "blockchain/internal/progresslog",
-    "blockchain/stake",
-    "blockchain/stake/internal/dbnamespace",
-    "blockchain/stake/internal/ticketdb",
-    "blockchain/stake/internal/tickettreap",
-    "certgen",
-    "chaincfg",
-    "chaincfg/chainec",
-    "chaincfg/chainhash",
-    "database",
-    "dcrec",
-    "dcrec/edwards",
-    "dcrec/secp256k1",
-    "dcrec/secp256k1/schnorr",
-    "lddljson",
-    "lddlutil",
-    "gcs",
-    "gcs/blockcf",
-    "hdkeychain",
-    "rpcclient",
-    "txscript",
-    "wire"
-  ]
-  revision = "9536f0c88fa85180c348043766f6c1d4d42107da"
-
-[[projects]]
-  name = "github.com/Legenddigital/lddlwallet"
-  packages = [
-    "errors",
-    "internal/helpers",
-    "internal/zero",
-    "wallet/internal/snacl",
-    "wallet/internal/txsizes",
-    "wallet/internal/walletdb",
-    "wallet/txauthor",
-    "wallet/txrules",
-    "wallet/udb"
-  ]
-  revision = "e07304bb76bcef9d455e4ed2c971b842df557e6c"
-  version = "release-v1.3.0-rc1"
-
-[[projects]]
-  name = "github.com/Legenddigital/slog"
-  packages = ["."]
-  revision = "fbd821ef791ba2b8ae945f5d44f4e49396d230c5"
   version = "v1.0.0"
 
 [[projects]]
@@ -205,7 +205,7 @@
   branch = "master"
   name = "golang.org/x/sys"
   packages = ["unix"]
-  revision = "98c5dad5d1a0e8a73845ecc8897d0bd56586511d"
+  revision = "4e1fef5609515ec7a2cee7b5de30ba6d9b438cbf"
 
 [[projects]]
   name = "golang.org/x/text"
@@ -276,6 +276,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "ed86c7526b3bf574c519bc0bfe1411c18d7a62408fcbff6b8a9cb0120d4595e0"
+  inputs-digest = "f6104af871558e6279c5a9f3e66d20f78ec66c104b5c7d6aed7f969f599058d1"
   solver-name = "gps-cdcl"
   solver-version = 1
